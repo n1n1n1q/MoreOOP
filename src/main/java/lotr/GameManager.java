@@ -1,7 +1,7 @@
 package lotr;
 
 public class GameManager {
-    void fight(Character c1, Character c2){
+    public void fight(Character c1, Character c2){
         System.out.println(c1+" fights with "+c2);
         while (c1.isAlive() && c2.isAlive()){
             if (kick_simulation(c1, c2)){
@@ -22,5 +22,4 @@ public class GameManager {
         }
         return false;
     }
-
 }
